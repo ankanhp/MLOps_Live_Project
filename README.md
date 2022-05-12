@@ -1,7 +1,7 @@
-"MLOps_Live_Project"
+"MLOps_Live_Project" 
 ==============================
 
-MLOps test creation
+PROS test creation
 
 Project Organization
 ------------
@@ -53,6 +53,4 @@ Project Organization
 
 
 --------
-
-_____
 
