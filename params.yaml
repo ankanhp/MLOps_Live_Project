@@ -1,0 +1,37 @@
+base:
+  project: PROS-Test-Creation-Project
+  random_state: 42
+  target_col: TARGET
+
+data_source:
+  s3_source: Raw_data\train.csv
+
+load_data:
+  raw_dataset_csv: Section_2_Production_Model_Package\regression_model\datasets\train.csv
+
+split_data:
+  train_path: Section_2_Production_Model_Package\regression_model\datasets\train.csv
+  test_path: Section_2_Production_Model_Package\regression_model\datasets\test.csv
+  test_size: 0.2
+
+estimators:
+  ElasticNet:
+    params:
+#      alpha: 0.88
+#      l1_ratio: 0.89
+      alpha: 0.9
+      l1_ratio: 0.4
+model_dir: Section_2_Production_Model_Package\regression_model\trained_models
+
+reports:
+  params: reports/params.json
+  scores: reports/scores.json
+
+webapp_model_dir: prediction_service/model/model.joblib
+
+mlflow_config:
+  artifacts_dir: artifacts
+  experiment_name: ElasticNet regression
+  run_name: mlops
+  registered_model_name: ElasticNetWineModel
+  remote_server_uri: http://0.0.0.0:1234
