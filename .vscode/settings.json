@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Section_2_Production_Model_Package"
+    ]
+}
