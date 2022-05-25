@@ -294,7 +294,7 @@ tags_only: &tags_only
 
 workflows:
   version: 2
-  Section_4:
+  section_4:
     jobs:
       - section_4_test_app
       - section_4_deploy_app_to_heroku:
