@@ -53,4 +53,5 @@ Project Organization
 
 
 --------
-Till pipeline -done
+Till pipeline - done
+CI pipeline - Working
